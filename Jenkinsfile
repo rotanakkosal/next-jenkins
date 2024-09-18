@@ -48,7 +48,7 @@ pipeline {
                     }
 
                     echo "Deploying container..."
-                    echo " Docker Image after build = ${dockerImage}
+                    echo " Docker Image after build = ${dockerImage} "
                     sh "docker run -d -p 3003:3000 --name ${DOCKER_IMAGE} ${DOCKER_IMAGE}:${tag}"
 
                     echo "List Docker Containers"
