@@ -6,7 +6,7 @@ pipeline {
         nodejs 'nodejs'
     }
     environment {
-        DOCKER_IMAGE = "rotanakkosal/fresh-nextjs"
+        DOCKER_IMAGE = "fresh-nextjs"
         tag = "${env.BUILD_NUMBER}"
         dockerHubCredential = 'dockerhub'
     }
